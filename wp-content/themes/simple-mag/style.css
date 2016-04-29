@@ -73,7 +73,7 @@ font-family : monospace, serif;
 font-size : 1em;
 }
 pre {
-white-space : pre-wrap;
+overflow-x: scroll;
 }
 q {
 quotes : "\201C" "\201D" "\2018" "\2019";
