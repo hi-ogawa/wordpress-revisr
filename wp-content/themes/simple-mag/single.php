@@ -23,15 +23,6 @@
 					<?php wp_link_pages(array('before' => '<p class="paged"><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 					<div class="post-tags"><?php the_tags(' ',' '); ?><div class="clear"></div></div>
 				</div>
-			
-				<div id="authorarea">
-					<?php if (function_exists('get_avatar')) { echo get_avatar( get_the_author_meta('email'), '100' ); }?>
-					<div class="authorinfo">
-						<h3><?php the_author_posts_link(); ?></h3>
-						<p><?php the_author_meta('description'); ?></p>
-					</div>
-				</div>
-
 			</div>
 			
 			<?php comments_template(); ?>
